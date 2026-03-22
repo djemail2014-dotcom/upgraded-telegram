@@ -232,8 +232,42 @@
       nav {
         flex-direction: column;
         gap: 14px;
-      }
+      } 
+      
+      .faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
 
+.faq {
+  background: #ffffff;
+  border: 1px solid #e6edf5;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.faq h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: #163a5f;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.faq p {
+  margin: 0;
+  color: #333;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
       .nav-links {
         justify-content: center;
       }
@@ -444,17 +478,28 @@
         </p>
       </div>
     </section>
+<section id="faq" class="soft">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
 
-    <section id="faq" class="soft">
-      <div class="container">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-grid">
-          <div class="faq"><h3>Do you work with students who have dyslexia?</h3><p>Yes. Diane provides targeted support for students with dyslexia.</p></div>
-          <div class="faq"><h3>What ages do you work with?</h3><p>Elementary and middle school students.</p></div>
-          <div class="faq"><h3>What do sessions focus on?</h3><p>Phonemic awareness, phonics, decoding, spelling, fluency, and comprehension.</p></div>
-        </div>
+    <div class="faq-grid">
+      <div class="faq">
+        <h3>Do you work with students who have dyslexia?</h3>
+        <p>Yes. Diane provides targeted support for students with dyslexia.</p>
       </div>
-    </section>
+
+      <div class="faq">
+        <h3>What ages do you work with?</h3>
+        <p>Elementary and middle school students.</p>
+      </div>
+
+      <div class="faq">
+        <h3>What do sessions focus on?</h3>
+        <p>Phonemic awareness, phonics, decoding, spelling, fluency, and comprehension.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section id="booking">
       <div class="container">
